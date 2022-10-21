@@ -5,8 +5,11 @@ import Logo from "../public/logo.svg";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 const Home: NextPage = () => {
+  const [search, setSearch] = useState("");
+
   return (
     <div className="flex min-h-screen flex-col items-center">
       <Head>
@@ -14,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header title="hello world." />
 
       <main className="w-full flex-1 p-5 gap-8 md:gap-16 md:px-14 flex flex-col items-center">
         <div className="flex flex-col items-center justify-center gap-5">
@@ -33,12 +36,14 @@ const Home: NextPage = () => {
                 id="search"
                 name="search"
                 className="border-none outline-none text-4xl md:text-5xl font-semibold w-full max-w-4xl text-gray-800 caret-gray-400"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
               />
               <button type="submit">
                 <MagnifyingGlassIcon className="w-14 md:w-20 text-gray-200 hover:text-gray-300 duration-300" />
               </button>
             </div>
-            <label htmlFor="search" className="text-gray-300">
+            <label htmlFor="search" className="w-fit text-gray-300">
               Type what you're looking for..
             </label>
           </form>
