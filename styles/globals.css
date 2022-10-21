@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+input::placeholder {
+  color: #eeeeee;
+  transition-duration: 300ms;
+}
+
+input:hover::placeholder,
+input:focus::placeholder {
+  color: rgb(209 213 219);
+}
+
+::-moz-selection {
+  color: #444;
+  background: #eeeeee;
+}
+
+::selection {
+  color: #444;
+  background: #eeeeee;
+}
