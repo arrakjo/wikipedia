@@ -6,6 +6,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import RecommendationCard from "../components/RecommendationCard";
 
 const Home: NextPage = () => {
   const [search, setSearch] = useState("");
@@ -22,7 +23,13 @@ const Home: NextPage = () => {
       <main className="w-full flex-1 p-5 gap-8 md:gap-16 md:px-14 flex flex-col items-center">
         <div className="flex flex-col items-center justify-center gap-5">
           <div className="relative w-32 h-32">
-            <Image src={Logo} alt="Logo" layout="fill" className="opacity-70" />
+            <Image
+              src={Logo}
+              alt="Logo"
+              layout="fill"
+              className="opacity-70"
+              priority
+            />
           </div>
           <h1 className="font-semibold text-3xl text-gray-800">wikipedia</h1>
         </div>
@@ -50,6 +57,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
+      <RecommendationCard />
       <Footer />
     </div>
   );
