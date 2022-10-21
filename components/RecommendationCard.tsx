@@ -6,12 +6,14 @@ function RecommendationCard() {
       <p className="text-gray-500">recommended</p>
       <div className="flex-1 px-5 lg:px-0 lg:pr-2 flex flex-col lg:flex-row gap-5">
         <Link href="#">
-          <a className="link truncate break-keep lg:w-1/4 max-w-[196px]">
+          <a className="link truncate break-keep lg:w-1/4 lg:max-w-[126px]">
             William Shakespeare
           </a>
         </Link>
         <Link href="#">
-          <a className="link truncate break-keep max-w-[196px]">Lorem Ipsum</a>
+          <a className="link truncate break-keep lg:max-w-[126px]">
+            Lorem Ipsum
+          </a>
         </Link>
 
         <Link href="#">
