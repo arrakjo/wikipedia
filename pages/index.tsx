@@ -23,11 +23,11 @@ const Home: NextPage = () => {
           </div>
           <h1 className="font-semibold text-3xl text-gray-800">wikipedia</h1>
         </div>
-        <div className="w-full flex flex-col justify-start md:p-5 gap-10">
+        <div className="w-full max-w-6xl flex flex-col justify-start md:p-5 gap-10">
           <form className="w-full flex flex-col gap-10">
             <div className="w-full flex items-center justify-between">
               <input
-                type="text"
+                type="search"
                 placeholder="Search"
                 aria-label="Search content"
                 id="search"
