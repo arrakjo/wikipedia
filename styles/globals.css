@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Jost", sans-serif;
 }
@@ -56,4 +60,14 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 
 .link:hover {
   text-decoration: underline;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 20px;
+  line-height: 200%;
+}
+
+ol > li {
+  color: #6b7280;
 }

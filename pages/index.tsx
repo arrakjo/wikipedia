@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header title="hello world." />
+      <Header title="hello world." href="/" />
 
       <main className="w-full flex-1 p-5 gap-8 md:gap-16 md:px-14 flex flex-col items-center">
         <div className="flex flex-col items-center justify-center gap-5">
